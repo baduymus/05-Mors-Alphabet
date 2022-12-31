@@ -109,7 +109,9 @@ int main(void)
     MX_USB_HOST_Process();
 
     /* USER CODE BEGIN 3 */
+
     RETURN_BEGINNING();
+
     // Letter : B
     HAL_GPIO_WritePin(GREEN_LED_GPIO_Port, GREEN_LED_Pin, GPIO_PIN_SET);
     HAL_Delay(LONG);
@@ -413,14 +415,14 @@ void NEXT_LETTER(void){
 }
 
 /**
-  * @brief  This function is executed in case of error occurrence.
+  * @brief  When this function called it gives blue led on for a 1 second.
   * @retval None
   */
 void RETURN_BEGINNING(void){
 	HAL_GPIO_WritePin(BLUE_LED_GPIO_Port, BLUE_LED_Pin, GPIO_PIN_SET);
-	HAL_Delay(DELAY);
+	HAL_Delay(1000);
 	HAL_GPIO_WritePin(BLUE_LED_GPIO_Port, BLUE_LED_Pin, GPIO_PIN_RESET);
-	HAL_Delay(DELAY);
+	HAL_Delay(1000);
 }
 
 /* USER CODE END 4 */
