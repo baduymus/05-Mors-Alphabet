@@ -1,7 +1,7 @@
 ## Mors Alphabet Application
 
 In this project, I wrote my name with using morse alphabet. I thought this project will help many beginners who start embedded
-software engineer fields and understanding somebasics of about coding. I wrote 2 functions in this project. 
+software developemnt and understanding somebasics of about coding.
 
 **This project can be improve and you can describe all letters and just calling with a function.**
 
